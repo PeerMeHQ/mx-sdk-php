@@ -1,0 +1,29 @@
+{
+  "name": "peerme/mx-sdk-php",
+  "autoload": {
+    "psr-4": {
+      "Peerme\\MxSdkPhp\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Micha Vie",
+      "email": "micha@peerme.io",
+      "homepage": "https://michavie.com"
+    }
+  ],
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/peermehq"
+    }
+  ],
+  "require-dev": {
+    "pestphp/pest": "^1.22"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
