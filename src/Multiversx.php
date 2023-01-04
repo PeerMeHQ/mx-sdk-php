@@ -14,7 +14,7 @@ class Multiversx
         return new Constants;
     }
 
-    public function verifyLogin(string $token, Signature|string $signature, Address|string $address): bool
+    public static function verifyLogin(string $token, Signature|string $signature, Address|string $address): bool
     {
         $address = $address instanceof Address ? $address : Address::fromBech32($address);
         $signature = $signature instanceof Signature ? $signature : new Signature($signature);
