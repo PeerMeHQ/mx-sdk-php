@@ -32,8 +32,7 @@
     "brick/math": "^0.10.2",
     "simplito/elliptic-php": "^1.0",
     "kornrunner/keccak": "^1.1",
-    "illuminate/collections": "^9.46",
-    "guzzlehttp/guzzle": "^7.5"
+    "illuminate/collections": "^9.46"
   },
   "require-dev": {
     "pestphp/pest": "^1.22"
