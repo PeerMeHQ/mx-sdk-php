@@ -1,5 +1,6 @@
 {
   "name": "peerme/mx-sdk-php",
+  "description": "MultiversX SDK written in PHP.",
   "scripts": {
     "test": "vendor/bin/pest",
     "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
