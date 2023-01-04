@@ -1,8 +1,17 @@
 {
   "name": "peerme/mx-sdk-php",
+  "scripts": {
+    "test": "vendor/bin/pest",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
   "autoload": {
     "psr-4": {
-      "Peerme\\MxSdkPhp\\": "src/"
+      "Peerme\\Mx\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Peerme\\Mx\\Tests\\": "tests"
     }
   },
   "authors": [
@@ -18,6 +27,14 @@
       "url": "https://github.com/sponsors/peermehq"
     }
   ],
+  "require": {
+    "bitwasp/bech32": "^0.0.1",
+    "brick/math": "^0.10.2",
+    "simplito/elliptic-php": "^1.0",
+    "kornrunner/keccak": "^1.1",
+    "illuminate/collections": "^9.46",
+    "guzzlehttp/guzzle": "^7.5"
+  },
   "require-dev": {
     "pestphp/pest": "^1.22"
   },
