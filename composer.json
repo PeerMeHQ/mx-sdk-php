@@ -4,6 +4,7 @@
     "test": "vendor/bin/pest",
     "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
   },
+  "license": "MIT",
   "autoload": {
     "psr-4": {
       "Peerme\\Mx\\": "src"
