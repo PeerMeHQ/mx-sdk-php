@@ -23,6 +23,19 @@ final class TransactionPayload
             : new TransactionPayload($func);
     }
 
+    public static function contractCallWithEsdtPayment(TokenPayment $payment, string $functionName, array $args): TransactionPayload
+    {
+        $data = collect(['ESDTTransfer'])
+            ->push(Encoder::toHex($payment->tokenIdentifier))
+            ->push(Encoder::toHex($payment->amountAsBigInteger))
+            ->push(Encoder::toHex($functionName))
+            ->push(...collect($args)->map(fn ($arg) => Encoder::toHex($arg))->all())
+            ->filter()
+            ->join('@');
+
+        return new TransactionPayload($data);
+    }
+
     public static function issueNonFungible(string $name, string $ticker, array $properties = []): TransactionPayload
     {
         $data = collect(['issueNonFungible'])

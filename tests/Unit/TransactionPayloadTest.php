@@ -1,5 +1,6 @@
 <?php
 
+use Peerme\Mx\TokenPayment;
 use Peerme\Mx\TransactionPayload;
 
 it('contractCall - builds a contract call payload', function () {
@@ -9,6 +10,17 @@ it('contractCall - builds a contract call payload', function () {
 
     expect($actual->data)
         ->toBe('doTest@61726732@61726731@03');
+});
+
+it('contractCallWithEsdtPayment - builds a contract call payload with esdt payment', function () {
+    $payment = TokenPayment::fungibleFromAmount('TOKEN-123456', 1000, 18);
+
+    $actual = TransactionPayload::contractCallWithEsdtPayment($payment, 'doTest', [
+        'arg2', 'arg1', 3,
+    ]);
+
+    expect($actual->data)
+        ->toBe('ESDTTransfer@544f4b454e2d313233343536@3635c9adc5dea00000@646f54657374@61726732@61726731@03');
 });
 
 it('issueNonFungible - builds an nft token issue payload', function () {
