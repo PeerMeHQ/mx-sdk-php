@@ -32,13 +32,13 @@
   "require": {
     "php": "^8.1",
     "bitwasp/bech32": "^0.0.1",
-    "brick/math": "^0.10.2",
+    "brick/math": "^0.11",
     "simplito/elliptic-php": "^1.0",
     "kornrunner/keccak": "^1.1",
-    "illuminate/collections": "^9.46"
+    "illuminate/collections": "^9.0|^10.0"
   },
   "require-dev": {
-    "pestphp/pest": "^1.22"
+    "pestphp/pest": "^2.4"
   },
   "config": {
     "allow-plugins": {
