@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dce795443954fd0b57ef7b3efd31e244",
+    "content-hash": "a775f1c9d9094a1304f6963e611cc6a1",
     "packages": [
         {
             "name": "bitwasp/bech32",
