@@ -1,8 +1,10 @@
 # MultiversX SDK for PHP
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/PeerMe/mx-sdk-php.svg?style=flat-square)](https://packagist.org/packages/PeerMe/mx-sdk-php)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/PeerMeHQ/mx-sdk-php/tests.yml?branch=main&label=Tests)](https://github.com/PeerMeHQ/mx-sdk-php/actions?query=workflow%3ATests+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/PeerMe/mx-sdk-php.svg?style=flat-square)](https://packagist.org/packages/PeerMe/mx-sdk-php)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/PeerMe/mx-sdk-php.svg?style=for-the-badge)](https://packagist.org/packages/PeerMe/mx-sdk-php)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/PeerMeHQ/mx-sdk-php/tests.yml?style=for-the-badge&branch=main&label=Tests)](https://github.com/PeerMeHQ/mx-sdk-php/actions?query=workflow%3ATests+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/PeerMe/mx-sdk-php.svg?style=for-the-badge)](https://packagist.org/packages/PeerMe/mx-sdk-php)
+[![](https://img.shields.io/twitter/follow/PeerMeHQ?color=%23555555&label=Follow%20PeerMe&logo=twitter&style=for-the-badge)](https://twitter.com/PeerMeHQ)
+[![](https://dcbadge.vercel.app/api/server/sDeejyk3VR)](https://discord.gg/sDeejyk3VR)
 
 ## Installation
 
